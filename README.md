@@ -9,8 +9,8 @@ See [development portal](https://api-developer.nets.com.sg/) for a complete guid
 
 Take note of the additional permissions added.
 ```
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="com.nets.netspay.QR_TRANSACTION"/>
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="com.nets.netspay.QR_TRANSACTION"/>
 ```
         
 **2. build.gradle(Module: app)**
@@ -18,8 +18,8 @@ Take note of the additional permissions added.
 A few additional dependencies, namely:
 
 ```
-    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
 ```         
 **3. MainActivity.java**
 
