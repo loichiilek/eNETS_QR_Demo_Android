@@ -29,7 +29,7 @@ public class NETS_QR_APIController implements Callback<ResponseBody> {
 
     private static final String URL = "https://uat-api.nets.com.sg:9065/uat/merchantservices/";
 
-    NETSQRCallback mnetsqrCallback;
+    private NETSQRCallback mnetsqrCallback;
 
     public void makecall(RequestBody requestBody, String signature, NETSQRCallback netsqrCallback) {
         mnetsqrCallback = netsqrCallback;
