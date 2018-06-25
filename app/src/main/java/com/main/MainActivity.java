@@ -23,6 +23,7 @@ import com.request.NpxData;
 import com.request.RequestBody;
 import com.response.ResponseBody;
 import com.google.gson.Gson;
+import com.util.SignatureGenerator;
 
 import java.util.ArrayList;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.main;
+package com.util;
 
 import android.util.Base64;
 import android.util.Log;
@@ -20,7 +20,7 @@ public class SignatureGenerator {
         return signature.replace("\n", "");
     }
 
-    public static byte[] hashSHA256ToBytes(byte[] input){
+    private static byte[] hashSHA256ToBytes(byte[] input){
         byte[] byteData;
 
         try {
@@ -36,7 +36,7 @@ public class SignatureGenerator {
         return null;
     }
 
-    public static String encodeBase64(byte[] data){
+    private static String encodeBase64(byte[] data){
 
 
         Log.d("encodeBase64", Base64.encodeToString(data, Base64.DEFAULT));
