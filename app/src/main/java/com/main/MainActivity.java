@@ -1,4 +1,4 @@
-package com.enets_qr_test_android;
+package com.main;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

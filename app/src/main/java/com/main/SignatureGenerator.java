@@ -1,4 +1,4 @@
-package com.enets_qr_test_android;
+package com.main;
 
 import android.util.Base64;
 import android.util.Log;
