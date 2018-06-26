@@ -1,6 +1,6 @@
 ## eNETS_QR_Demo_Android
 This repository will get you a copy of the project up and running on your local machine for development and testing purposes.
-**Does not** show interaction with merchant portal.
+**Does not** show the interaction with merchant portal.
 
 See [development portal](https://api-developer.nets.com.sg/) for a complete guide on how to deploy the project on a live system.
 
@@ -30,17 +30,17 @@ HTTP POST to NETS endpoint for a basic "order request".
 Used for generating your signature. In actually production environment, the signature should be generated on the merchant portal. However, for this sample application, the implementation is shown in the application.
 
 ## Basic Functionalities
-1. Sends a HTTP POST (async) message to eNETS endpoint.
+1. Payload is mapped to a POJO, allows a simple creation of the payload.
 
-2. Receives and parses the response into POJO.
+2. Generates the corresponding signature.
 
-3. Allows alteration and editing of the payload.
+3. Sends a HTTP POST (async) message to eNETS endpoint. (With payload as the body)
 
-4. Generate the corresponding signature.
+4. Receives and parses the response into POJO. (Allows retrieval of QR-code)
 
-5. Calls NETSPay application, passing in QR-code with the added Bundle.
+5. Calls NETSPay application, passing in QR-code via an added Bundle.
 
-6. Implements corresponding actions.
+6. Implements corresponding actions upon successful/ unsuccessful transactions.
 
 ## Built With
 
